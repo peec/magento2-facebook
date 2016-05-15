@@ -6,7 +6,7 @@ Currently supports:
 
 - [x] Magento 2 widget for liking a facebook page. Useful i footers.
 - [ ] Ability to like products
-- [ ] Facebook analytics (Pixel) integration
+- [ ] Facebook analytics (Pixel) integration
 
 
 ## Installation
