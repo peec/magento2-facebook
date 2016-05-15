@@ -1,17 +1,31 @@
-## Synopsis
+# Facebook for Magento 2
 
-Extension for Magento 2 that places a Facebook like and share button in the social section of each product page
+Add facebook widgets to your Magento 2 store.
+
+Currently supports:
+
+- [x] Magento 2 widget for liking a facebook page. Useful i footers.
+- [ ] Ability to like products
+- [ ] Facebook analytics (Pixel) integration
+
 
 ## Installation
 
-`composer require "pheme/magento2-facebook-likes`
+`composer require "peec/magento2-facebook`
 
 `php bin/magento setup:upgrade`
 
-## Contributors
 
-Contributions are welcome in the form of bug reports or pull requests. Thanks in advance for your contribution!
 
-## License
+## FAQ
 
-BSD
+### How do I add page like widget to footer of luma theme?
+
+ - Go to Content -> Widgets
+ - Add a new widget, select "Facebook Page".
+ - Add it, and click "Layout updates".
+ - Select "All pages" and select "Footer".
+ - Save.
+
+
+
