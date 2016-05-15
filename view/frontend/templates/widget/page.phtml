@@ -1,0 +1,12 @@
+<div class="fb-page"
+     data-href="<?php echo $this->getFacebookPageUrl() ?>"
+     data-small-header="<?php echo $this->getSmallHeader() === "1" ? "true" : "false" ?>"
+     data-adapt-container-width="<?php echo $this->getAdaptContainerWidth() === "1" ? "true" : "false" ?>"
+     data-hide-cover="<?php echo $this->getHideCover() === "1" ? "true" : "false" ?>"
+     data-show-facepile="<?php echo $this->getShowFacepile() === "1" ? "true" : "false" ?>">
+    <div class="fb-xfbml-parse-ignore">
+        <blockquote cite="<?php echo $this->getFacebookPageUrl() ?>">
+            <a href="<?php echo $this->getFacebookPageUrl() ?>"><?php echo $this->getFacebookPageTitle() ?></a>
+        </blockquote>
+    </div>
+</div>

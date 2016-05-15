@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Magento/Widget/etc/widget.xsd">
+    <widget id="peec_facebook_page" class="Peec\Facebook\Block\Widget\Page">
+        <label translate="true">Facebook Page Widget</label>
+        <description>Facebook Page widget. Use for example in footer of the page. See store settings to configure the widget.</description>
+    </widget>
+</widgets>
