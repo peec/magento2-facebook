@@ -13,6 +13,14 @@
                 <hide_cover>0</hide_cover>
                 <show_facepile>1</show_facepile>
             </page>
+            <likes>
+                <show_in_product>1</show_in_product>
+                <show_faces>1</show_faces>
+                <share>1</share>
+                <action>recommend</action>
+                <color_scheme>light</color_scheme>
+                <product_layout>standard</product_layout>
+            </likes>
         </peec_facebook>
     </default>
 </config>

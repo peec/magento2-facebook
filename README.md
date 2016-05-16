@@ -5,7 +5,7 @@ Add facebook widgets to your Magento 2 store.
 Currently supports:
 
 - [x] Magento 2 widget for liking a facebook page. Useful i footers.
-- [ ] Ability to like products
+- [x] Ability to like products
 - [ ] Facebook analytics (Pixel) integration
 
 
@@ -15,6 +15,10 @@ Currently supports:
 
 `php bin/magento setup:upgrade`
 
+
+## Configuration
+
+Go to Stores -> Configuration -> Peec -> Facebook to configure for your needs.
 
 
 ## FAQ

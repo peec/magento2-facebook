@@ -21,7 +21,6 @@
             <group id="page" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
                 <label>Facebook Page</label>
 
-
                 <field id="facebook_page_title" translate="label comment" type="text" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Facebook Page Title</label>
                     <comment>Facebook page title</comment>
@@ -60,6 +59,49 @@
                 </field>
 
             </group>
+
+
+            <group id="likes" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Likes</label>
+                <field id="show_in_product" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show in product view</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="show_faces" translate="label comment" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Show Faces</label>
+                    <comment>Specifies whether to display profile photos below the button (standard layout only).</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="share" translate="label comment" type="select" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Share</label>
+                    <comment>Add a "Share" button</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="action" translate="label" type="select" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Action</label>
+                    <comment>The verb to display on the button. Can be either "like" or "recommend"</comment>
+                    <source_model>Peec\Facebook\Model\Config\Source\Action</source_model>
+                </field>
+                <field id="color_scheme" translate="label comment" type="select" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Color Scheme</label>
+                    <comment>The color scheme used by the plugin for any text outside of the button itself. Can be light or dark.</comment>
+                    <source_model>Peec\Facebook\Model\Config\Source\ColorScheme</source_model>
+                </field>
+                <field id="product_layout" translate="label comment" type="select" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Product Layout</label>
+                    <comment>Selects one of the different layouts that are available</comment>
+                    <source_model>Peec\Facebook\Model\Config\Source\Layout</source_model>
+                </field>
+                <field id="data_ref" translate="label comment" type="text" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Data Ref</label>
+                    <comment>A label for tracking referrals which must be less than 50 characters and can contain alphanumeric characters and some punctuation (currently +/=-.:_)</comment>
+                </field>
+                <field id="width" translate="label comment" type="text" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Width</label>
+                    <comment>The width of the plugin (standard layout only), which is subject to the minimum and default width.</comment>
+                </field>
+            </group>
+
         </section>
     </system>
 </config>
