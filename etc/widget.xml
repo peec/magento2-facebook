@@ -4,4 +4,8 @@
         <label translate="true">Facebook Page Widget</label>
         <description>Facebook Page widget. Use for example in footer of the page. See store settings to configure the widget.</description>
     </widget>
+    <widget id="peec_facebook_like" class="Peec\Facebook\Block\Widget\Like">
+        <label translate="true">Facebook Like Widget</label>
+        <description>Facebook Like widget. Use for example in Product social links.</description>
+    </widget>
 </widgets>

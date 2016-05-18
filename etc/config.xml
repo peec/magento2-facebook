@@ -14,7 +14,6 @@
                 <show_facepile>1</show_facepile>
             </page>
             <likes>
-                <show_in_product>1</show_in_product>
                 <show_faces>1</show_faces>
                 <share>1</share>
                 <action>recommend</action>

@@ -63,10 +63,6 @@
 
             <group id="likes" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
                 <label>Likes</label>
-                <field id="show_in_product" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Show in product view</label>
-                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
-                </field>
                 <field id="show_faces" translate="label comment" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Show Faces</label>
                     <comment>Specifies whether to display profile photos below the button (standard layout only).</comment>

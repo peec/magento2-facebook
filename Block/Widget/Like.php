@@ -1,5 +1,5 @@
 <?php
-namespace Peec\Facebook\Block;
+namespace Peec\Facebook\Block\Widget;
 
 use Magento\Framework\UrlInterface;
 use Magento\Store\Model\ScopeInterface;
@@ -7,7 +7,7 @@ use Magento\Framework\View\Element\Template;
 use Magento\Framework\View\Element\Template\Context;
 use Magento\Framework\App\Config\ScopeConfigInterface;
 
-class Like extends Template
+class Like extends Template implements \Magento\Widget\Block\BlockInterface
 {
     /**
      * @var ScopeConfigInterface
@@ -33,6 +33,7 @@ class Like extends Template
         parent::__construct($context, $data);
         $this->scopeConfig = $scopeConfig;
         $this->urlInterface = $urlInterface;
+        $this->setTemplate('widget/like.phtml');
     }
     public function getShowFaces()
     {
