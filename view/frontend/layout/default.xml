@@ -4,6 +4,8 @@
         <referenceContainer name="before.body.end">
             <block class="Peec\Facebook\Block\AsyncInit" name="peec.facebook.async.init"
                    template="Peec_Facebook::async-init.phtml" ifconfig="peec_facebook/general/active"/>
+            <block class="Peec\Facebook\Block\Pixel" name="peec.facebook.pixel"
+                   template="Peec_Facebook::pixel.phtml" ifconfig="peec_facebook/pixel/active"/>
         </referenceContainer>
     </body>
 </page>

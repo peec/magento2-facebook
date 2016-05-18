@@ -5,6 +5,10 @@
             <general>
                 <active>1</active>
             </general>
+            <pixel>
+                <active></active>
+                <facebook_pixel_id></facebook_pixel_id>
+            </pixel>
             <page>
                 <facebook_page_title></facebook_page_title>
                 <facebook_page_url></facebook_page_url>

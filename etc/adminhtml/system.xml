@@ -18,6 +18,20 @@
                 </field>
             </group>
 
+
+            <group id="pixel" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Facebook Pixel</label>
+                <field id="active" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="facebook_pixel_id" translate="label comment" type="text" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Facebook Pixel ID</label>
+                    <comment>Your facebook pixel id.</comment>
+                </field>
+            </group>
+
+
             <group id="page" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
                 <label>Facebook Page</label>
 
@@ -62,7 +76,7 @@
 
 
             <group id="likes" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
-                <label>Likes</label>
+                <label>Facebook Likes</label>
                 <field id="show_faces" translate="label comment" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Show Faces</label>
                     <comment>Specifies whether to display profile photos below the button (standard layout only).</comment>
