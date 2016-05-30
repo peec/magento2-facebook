@@ -14,11 +14,6 @@ class Pixel extends Template {
     protected $locale;
 
     /**
-     * @var ScopeConfigInterface
-     */
-    protected $scopeConfig;
-    protected $urlInterface;
-    /**
      * Extension config path
      */
     const XML_PATH_FB = 'peec_facebook/pixel/';
@@ -31,13 +26,9 @@ class Pixel extends Template {
     public function __construct(
         Context $context,
         array $data,
-        ResolverInterface $locale,
-        ScopeConfigInterface $scopeConfig,
-        UrlInterface $urlInterface
+        ResolverInterface $locale
     ) {
         parent::__construct($context, $data);
-        $this->scopeConfig = $scopeConfig;
-        $this->urlInterface = $urlInterface;
         $this->locale = $locale;
     }
     public function getLocale()
@@ -46,6 +37,6 @@ class Pixel extends Template {
     }
     public function getPixelId()
     {
-        return $this->scopeConfig->getValue(static::XML_PATH_FB . 'facebook_pixel_id', ScopeInterface::SCOPE_STORE);
+        return $this->_scopeConfig->getValue(static::XML_PATH_FB . 'facebook_pixel_id', ScopeInterface::SCOPE_STORE);
     }
 }
